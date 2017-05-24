@@ -11,4 +11,8 @@ package foursquareanalysis;
  */
 public enum ExpenseType {
     
+//    public enum utilitiesType{
+//    
+//    }
+    
 }

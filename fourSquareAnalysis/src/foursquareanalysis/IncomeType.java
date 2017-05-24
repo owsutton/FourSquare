@@ -10,5 +10,5 @@ package foursquareanalysis;
  * @author owsutton
  */
 public enum IncomeType {
-    
+    rental,laundry,storage,misc,hoa;
 }
