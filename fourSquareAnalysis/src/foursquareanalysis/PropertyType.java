@@ -9,6 +9,7 @@ package foursquareanalysis;
  *
  * @author owsutton
  */
-public @interface PropertyType {
+public enum PropertyType {
+    singleFamily,multiFamily,industrial;
     
 }
