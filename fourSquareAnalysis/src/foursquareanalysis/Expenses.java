@@ -23,17 +23,19 @@ public class Expenses {
     private double mortgagePayment;
     private double tExpenses;
     public Expenses(){
-    tax=insurance=utilities=hoa=lawn=snow=vacancy=repairs=capEx=propertyManagement=mortgagePayment=tExpenses=0;
+    tax=insurance=utilities=hoa=lawn=snow=vacancy=repairs=capEx=propertyManagement=mortgagePayment=0;
+    tExpenses=0;
     
     
     
     }
     public double calculateTotalExpenses(){
     
-        tExpenses= tax+insurance+utilities+hoa+lawn+snow+vacancy+repairs+capEx+propertyManagement+mortgagePayment;
+        tExpenses=tax+insurance+utilities+hoa+lawn+snow+vacancy+repairs+capEx+propertyManagement+mortgagePayment;
         
         return tExpenses;
     }
+    
     /**
      * @return the tax
      */
@@ -186,5 +188,19 @@ public class Expenses {
      */
     public void setMortgagePayment(double mortgagePayment) {
         this.mortgagePayment = mortgagePayment;
+    }
+
+    /**
+     * @return the tExpenses
+     */
+    public double gettExpenses() {
+        return tExpenses;
+    }
+
+    /**
+     * @param tExpenses the tExpenses to set
+     */
+    public void settExpenses(double tExpenses) {
+        this.tExpenses = tExpenses;
     }
 }
